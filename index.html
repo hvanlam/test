@@ -2,8 +2,10 @@
 <body>
   <h3>Should see msenn here</h3>
   
+  <div id="output"></div>
   
 <script>
+    document.getElementById("output").innerHtml = "test" + Date.now();
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", 'https://vfmetadata--c.stmfa.stm.visualforce.com/resource/1554832772000/banana/myjs.js');
     xmlhttp.withCredentials = true;
